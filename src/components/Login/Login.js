@@ -38,7 +38,9 @@ const Login = () => {
     }
   };
   return (
-    <div className="register-container border ">
+    <div className="common-section">
+
+    <div className="register-container border  ">
       <div className="header-sec">
         <h1 className="title">Login</h1>
       </div>
@@ -85,6 +87,8 @@ const Login = () => {
         <div>new register? <NavLink to="/signup">Sign Up</NavLink></div>
       </div>
     </div>
+    </div>
+
   );
 };
 

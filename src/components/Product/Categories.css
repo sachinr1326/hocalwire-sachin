@@ -5,8 +5,11 @@
     margin-bottom: 5%;
     flex-wrap: wrap;
 gap: 10px;
+
 }
 .cat-container select{
     max-width: 300px;
     flex-basis: 300px;
+    margin-left: auto;
+margin-right: auto;
 }

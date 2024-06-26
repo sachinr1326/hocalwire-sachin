@@ -14,13 +14,18 @@
 /* Shopping Cart Items CSS */
 .shopping-cart-items-wrapper {
     padding: 0 60px;
-    max-width: 1263px;
+    width: 100%;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .shopping-cart-items-container {
     padding-right: 10px;
     padding-top: 30px;
+    flex: 1;
+    flex-basis: 800px;
+    
 }
 
 .shopping-cart-items-heading {
@@ -35,23 +40,34 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+.shopping-cart-items-heading span,.shopping-cart-items-heading button{
+    flex-shrink: 1;
+    flex-basis: 200px;
 }
 .shopping-cart-item {
     display: flex;
     justify-content: space-between;
     padding: 5px 0;
+    flex-wrap: wrap;
 }
 
 .cart-item-content {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-grow:1;
+    flex-basis: 500px;
 }
 
 .cart-item-img {
     height: 110px;
     min-width: 110px;
     max-width: 110px;
+    flex:1;
+    flex-basis: 300px;
 }
 
 .cart-item-img img {
@@ -74,11 +90,9 @@
 
 .quant-sec{
     color: var(--fad-black);
-    font-family: var(--font-family-karla);
-    font-size: .85rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font: normal normal 800 15px / 15px var(--font-family-merri);
+    font-size: clamp(10px, 4vw, 15px);
+    line-height: clamp(10px, 4vw, 15px);
     margin-bottom: 10px;
 }
 .quant-sec .minus,.quant-sec .plus,.quant-sec .quantity{
@@ -120,6 +134,9 @@
 .shopping-cart-total-and-checkout {
     border-left: 1px solid var(--brand-color);
     padding-top: 40px;
+    flex: 1;
+    flex-basis: 400px;
+    padding: 40px;
 }
 
 .cart-total-and-checkout {

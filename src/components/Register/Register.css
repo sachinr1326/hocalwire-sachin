@@ -1,6 +1,12 @@
+.common-section{
+display: flex;
+align-items: center;
+justify-content: center;
+}
 .register-container {
   max-width: 900px;
-  margin: 5% auto 5% auto;
+  width: 900px;
+  margin: 5%;
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: rgba(var(--rgb-brand-color), 0.24) 0px 3px 8px;

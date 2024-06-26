@@ -77,6 +77,7 @@ const Register = () => {
     }
   };
   return (
+    <div className="common-section">
     <div className="register-container border ">
       <div className="header-sec">
         <h1 className="title">Register</h1>
@@ -293,6 +294,7 @@ const Register = () => {
         </form>
         <div>Already register? <NavLink to="/login">Login</NavLink></div>
       </div>
+    </div>
     </div>
   );
 };

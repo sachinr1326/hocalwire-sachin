@@ -209,8 +209,8 @@ if(res.status){
           </div>
           {carts.length > 0 ? (
             <>
-              <div className="shopping-cart-items-wrapper row">
-                <div className="shopping-cart-items-container col-12 col-lg-7 col-md-7">
+              <div className="shopping-cart-items-wrapper">
+                <div className="shopping-cart-items-container ">
                   <div className="shopping-cart-items-heading">
                     {cartcount} Cart
                   </div>
@@ -334,7 +334,7 @@ if(res.status){
                   </div>
                 </div>
 
-                <div className="shopping-cart-total-and-checkout col-12 col-lg-5 col-md-5">
+                <div className="shopping-cart-total-and-checkout">
                   <div className="cart-total-and-checkout">
                     <table class="table table-borderless">
                       <thead>
