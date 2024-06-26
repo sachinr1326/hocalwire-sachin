@@ -1,0 +1,10 @@
+.home-prod-conatiner{
+    margin: 5% 5% 10% 5%;
+}
+.home-prod-conatiner .prod-sec{
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: space-evenly;
+}
+

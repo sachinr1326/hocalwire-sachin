@@ -1,0 +1,94 @@
+.register-container {
+  max-width: 900px;
+  margin: 5% auto 5% auto;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: rgba(var(--rgb-brand-color), 0.24) 0px 3px 8px;
+}
+.register-container .header-sec {
+  background-color: var(--brand-color);
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+.register-container .title {
+  font: normal normal 800 30px / 30px var(--font-family-neu);
+  font-size: clamp(12px, 4vw, 30px);
+  line-height: clamp(15px, 4vw, 30px);
+  color: #000;
+}
+.register-container .field-sec {
+  padding: 3%;
+}
+.register-container .field-sec .form-label {
+  font: normal normal 700 15px / 15px var(--font-family-karla);
+  font-size: clamp(11px, 4vw, 15px);
+  line-height: clamp(11px, 4vw, 15px);
+  color: #000;
+}
+.register-container .field-sec .form-control {
+  font: normal normal 700 15px / 15px var(--font-family-karla);
+  font-size: clamp(12px, 4vw, 15px);
+  line-height: clamp(12px, 4vw, 15px);
+  color: #000;
+  min-height: 40px;
+  border: 1px solid var(--brand-color);
+}
+
+.register-container .field-sec .form-control::placeholder {
+  font: normal normal 500 15px / 15px var(--font-family-karla);
+  font-size: clamp(12px, 4vw, 15px);
+  line-height: clamp(12px, 4vw, 15px);
+  color: #999999;
+}
+.register-container .field-sec .form-control:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(var(--rgb-brand-color), 0.25);
+}
+.register-container .field-sec .title-line {
+  font: normal normal 700 14px / 14px var(--font-family-karla);
+  font-size: clamp(11px, 4vw, 14px);
+  line-height: clamp(11px, 4vw, 14px);
+  color: var(--fad-black);
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.register-container .field-sec .title-line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-top: 1px solid var(--third-color);
+  top: 50%;
+
+}
+.register-container .field-sec .register-btn{
+    font: normal normal 800 18px / 20px var(--font-family-neu);
+    font-size: clamp(10px, 4vw, 18px);
+    line-height: clamp(12px, 4vw, 23px);
+  color: #000;
+  background-color: var(--brand-color);
+  border: none;
+  border-radius: .5rem;
+  width: 100%;
+  margin-bottom: 10px;
+  min-height: 40px;
+}
+.register-container .field-sec .register-btn:hover{
+color: #fff;
+background-color: #000;
+}
+.register-container .field-sec .register-btn:disabled{
+  color: #000;
+  background-color:var(--third-color);
+
+}
+.register-container .field-sec .term-policy{
+    font: normal normal 500 12px / 12px var(--font-family-karla);
+    font-size: clamp(11px, 4vw, 12px);
+    line-height: clamp(11px, 4vw, 12px);
+    color: var(--fad-black);
+}
+.register-container .field-sec .term-policy.is-invalid{
+    color:red;
+}

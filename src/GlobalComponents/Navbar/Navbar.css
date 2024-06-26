@@ -1,0 +1,6 @@
+.navbar{
+    background-color: var(--brand-color);
+}
+.navbar .navbar-brand img{
+ max-width: 150px;
+}

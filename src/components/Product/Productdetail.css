@@ -1,0 +1,109 @@
+.product-container {
+  margin: 5%;
+  padding: 3%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.product-container .header-sec {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.product-container .img-sec {
+  flex: 1;
+  flex-basis: 500px;
+}
+.product-container .prod-img {
+  aspect-ratio: 4vw;
+  width: 100%;
+}
+.product-container .cart-sec {
+  flex: 1;
+  padding: 1rem;
+  flex-basis: 500px;
+}
+.product-container .add-to-cart {
+  font: normal normal 800 18px / 20px var(--font-family-neu);
+  font-size: clamp(10px, 4vw, 18px);
+  line-height: clamp(12px, 4vw, 23px);
+  color: #000;
+  background-color: var(--brand-color);
+  border: none;
+  border-radius: 15rem;
+  width: 100%;
+  margin-bottom: 10px;
+  min-height: 40px;
+}
+.product-container .add-to-cart:hover {
+  color: #fff;
+  background-color: #000;
+}
+.product-container .title {
+  font: normal normal 800 35px / 35px var(--font-family-neu);
+  font-size: clamp(15px, 4vw, 35px);
+  line-height: clamp(18px, 4vw, 35px);
+  color: var(--brand-color);
+  margin-bottom: 5%;
+}
+.product-container .desc {
+  font: normal normal 500 25px / 25px var(--font-family-karla);
+  font-size: clamp(10px, 4vw, 25px);
+  line-height: clamp(15px, 4vw, 30px);
+  color: #000;
+  margin-bottom: 5%;
+}
+.product-container .price {
+  font: normal normal 800 30px / 30px var(--font-family-merri);
+  font-size: clamp(15px, 4vw, 30px);
+  line-height: clamp(15px, 4vw, 30px);
+  color: #000;
+  margin-bottom: 5%;
+}
+.product-container .price::first-letter {
+  color: var(--brand-color);
+}
+.product-container .rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.product-container .rating .rate,
+.product-container .rating .member {
+  font: normal normal 500 18px / 20px var(--font-family-inter);
+  font-size: clamp(10px, 4vw, 18px);
+  line-height: clamp(12px, 4vw, 20px);
+  color: var(--fad-black);
+}
+.product-container .rating i {
+  color: var(--brand-color);
+}
+.product-container .back {
+  text-decoration: none;
+  font: normal normal 500 18px / 20px var(--font-family-merri);
+  font-size: clamp(10px, 4vw, 18px);
+  line-height: clamp(12px, 4vw, 20px);
+  color: var(--third-color);
+}
+.product-container .back:hover {
+  color: #000;
+}
+.product-container .quantity {
+  font: normal normal 800 30px / 30px var(--font-family-merri);
+  font-size: clamp(15px, 4vw, 30px);
+  line-height: clamp(15px, 4vw, 30px);
+  color: var(--brand-color);
+  background-color: #000;
+  border-radius: 15rem;
+  padding: 10px;
+  width: fit-content;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.product-container .quantity input {
+  max-width: 50px;
+}
