@@ -83,7 +83,7 @@ const Cart = () => {
     const controller = new AbortController();
     const signal = controller.signal;
     const totalquantity =
-      quantity >= 1 && value === 1 ? quantity + value : quantity;
+      quantity >= 1  ? quantity + value : quantity;
     const data = {
       userId: user.id,
       products: [{ productId: productId, quantity: totalquantity }],
