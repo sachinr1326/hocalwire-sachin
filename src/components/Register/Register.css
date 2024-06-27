@@ -1,15 +1,17 @@
 .common-section{
-display: flex;
-align-items: center;
-justify-content: center;
+  padding: 5% ;
 }
 .register-container {
   max-width: 900px;
-  width: 900px;
-  margin: 5%;
+  margin:auto;
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: rgba(var(--rgb-brand-color), 0.24) 0px 3px 8px;
+}
+.table-sec{
+  max-width: 900px;
+margin: auto;
+  overflow-x: auto;
 }
 .register-container .header-sec {
   background-color: var(--brand-color);

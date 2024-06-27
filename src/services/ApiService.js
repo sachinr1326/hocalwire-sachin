@@ -73,6 +73,11 @@ export function get_user_cart(id,signal){
     const apiUrl =`${API_URL}carts/user/${id}`;
     return fetchData(apiUrl,signal);
 }
+export function get_users(signal){
+    const apiUrl =`${API_URL}users`;
+    return fetchData(apiUrl,signal);
+}
+
 export function post_user(data){
     const apiUrl =`${API_URL}users`;
     return PostData(apiUrl,data);
