@@ -6,7 +6,16 @@ import "./Home.css";
 import Title from "../../GlobalComponents/Headings/Title";
 import Categories from "../Product/Categories";
 import Navbar from "../../GlobalComponents/Navbar/Navbar";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../services/Auth_context";
 function Home() {
+  const { token } = useAuth();
+  const navigate = useNavigate();
+  useEffect(()=>{
+if(!token){
+navigate("/login")
+}
+  },[token])
   const [products, setProducts] = useState();
   const [loding, setLoading] = useState(true);
   const [contLoading, setContLoading] = useState(false);
@@ -31,6 +40,7 @@ function Home() {
       ) : (
         <>
         <Navbar/>
+       
         <div className="home-prod-conatiner">
           <Title title={"Our Products"} />
           <Categories setProducts={setProducts} setLoading={setContLoading} />
